@@ -1,0 +1,104 @@
+/*O logo muda de posiçao*/
+
+* {
+  margin: 0;
+}
+
+/*O corpo: cores do nomezinho Carolina Dias*/
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+
+  /*FONTE*/
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*FUNDO: NO CENTRO*/
+body {
+  display: grid;
+  place-items: center;
+}
+
+/*FUNDO DEGRADÊ*/
+main {
+  background: url(images/background.svg);
+  width: 375px;
+  height: 812px;
+}
+
+/*POSICIONAMENTO DOS ITENS + COR DA FONTE*/
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--grey);
+}
+
+/*POSICIONAMENTO DOS ITENS, FOTO, FONTE...*/
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+
+  position: relative;
+}
+
+/*POSIÇAO DA FOTO*/
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+
+/*MOLDE DA FOTO*/
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+/*ESCRITA*/
+h1 {
+  font-size: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+
+/*GIT, CORES DAS FONTES*/
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/*MARFIN DE UM TEXTO PARA O OUTRO: GITHUB + APRENDENDO A PROGRAMAR*/
+p {
+  margin-top: 2rem;
+}
+
+/*ESPAÇAMENTO DOS ICONES */
+ul {
+  margin-top: 4rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
+}
